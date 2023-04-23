@@ -1,12 +1,14 @@
 package com.mainscreen.mainprices.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
 
-    @RequestMapping("/index.html")
+    @GetMapping(path = "/index" , produces = MediaType.APPLICATION_XHTML_XML_VALUE)
     public String index() {
         return "index";
     }

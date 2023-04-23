@@ -14,7 +14,7 @@ import java.util.ArrayList;
 @RestController
 public class MainController {
 
-    @GetMapping(path = "/api" , produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/" , produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ArrayList<Asset>> getMainPage() {
 
         Asset x = new Asset(1, "name", 1);
